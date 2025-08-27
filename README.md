@@ -220,5 +220,3 @@ I further edited this .svg with InkSpace.
 ```bash
 genovi -i bakta_output/bin.3/bin.3.gbff -s complete --size -cs purple -k -t "Stammerula tephritidis" -te --title_position center -o stam_purple
 ```
-
-## R code to check out
