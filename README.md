@@ -108,7 +108,7 @@ sbatch scripts/wrangleVCF.sh \
 
 
 ## MAG COVERAGE
-
+Generate MAG coverage using the metagenome BAM files by subsetting `qualimap` only to the MAG of interest.
 ```bash
 # Convert to BED
 mamba activate bedops
@@ -123,6 +123,7 @@ bash scripts/parseQualimap.sh
 ```
 
 ## MAG KEGG
+Calculate the completeness.
 
 ```bash
 # DRAM KO
@@ -186,45 +187,37 @@ cat KEGG_UNION/summary.kegg_pathways.bact.union.tsv | grep -v "module_" | wc -l
 149
 ```
 
+## FIlter the vcf file accordingly. 
+I used R and bcftools to parse the vcf file
 
-## Population structure
+## PCA
+PLINK v1.9.0-b.7.7 64-bit (22 Oct 2024)
+Options in effect:
+  --allow-extra-chr
+  --double-id
+  --make-bed
+  --out fst/stam.filt.bial.snps.passed.no-sc.no-outlier/stam.filt.bial.snps.passed.no-sc.no-outlier
+  --pca
+  --set-missing-var-ids @:#
+  --vcf vcfs/stam.filt.bial.snps.passed.no-sc.no-outlier.vcf.gz
+  
+## ADMIXTURE (population structure)
 ```bash
-for K in {1..24}; do admixture --cv -j12 data/stam.passed.no-sc.no-outlier.bed $K > stam.passed.no-sc.no-outlier.log-$K.out ; done
+for K in {1..10}; do admixture --cv -j12 data/stam.passed.no-sc.no-outlier.bed $K > stam.passed.no-sc.no-outlier.log-$K.out ; done
 ```
 
+## Phylogenetic tree
 
 ```bash
 vcf2phylip.py --input vcfs/stam.filt.bial.snps.passed.no-sc.no-outlier.vcf.gz --output-folder vcf2phylip/ --output-prefix stam.filt.bial.passed.no-sc.no-outlier --fasta --nexus
 
-genovi -i bakta_output/bin.3/bin.3.gbff -s complete --size -cs purple -k -t "Stammerula tephritidis" -te --title_position center -o stam_purple
-
 iqtree2 -s ROARY/core_gene_alignment.aln --mem 5GB --threads 4 --boot 500 -m MFP --prefix stam_roary
 ```
-## Pyani
-```
-pyani-plus anim mags/ --database stam_mag_comp.db --create-db --name "stam ANIm"
 
-pyani-plus anib mags/ --database stam_mag_comp.db --name "stam ANIb"
-
-pyani-plus dnadiff mags/ --database stam_mag_comp.db --name "stam dnadiff"
-
-pyani-plus fastani mags/ --database stam_mag_comp.db --name "stam fastani"
-
-pyani-plus sourmash mags/ --database stam_mag_comp.db --name "stam sourmash"
-
-
-pyani-plus list-runs --database stam_mag_comp.db
-                        5 analysis runs in stam_mag_comp.db
-┏━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━┳━━━━━━┳━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━┓
-┃ ID ┃ Date       ┃ Method   ┃ Done ┃ Null ┃ Miss ┃ Total ┃ Status ┃ Name          ┃
-┡━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━╇━━━━━━╇━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━┩
-│  1 │ 2025-08-22 │ ANIm     │   81 │    0 │    0 │ 81=9² │ Done   │ stam ANIm     │
-│  2 │ 2025-08-22 │ ANIb     │   81 │    0 │    0 │ 81=9² │ Done   │ stam ANIb     │
-│  3 │ 2025-08-22 │ dnadiff  │   81 │    0 │    0 │ 81=9² │ Done   │ stam dnadiff  │
-│  4 │ 2025-08-22 │ fastANI  │   81 │    0 │    0 │ 81=9² │ Done   │ stam fastani  │
-│  5 │ 2025-08-22 │ sourmash │   81 │    0 │    0 │ 81=9² │ Done   │ stam sourmash │
-└────┴────────────┴──────────┴──────┴──────┴──────┴───────┴────────┴───────────────┘
+## Plot the genome of the mag.
+I further edited this .svg with InkSpace.
+```bash
+genovi -i bakta_output/bin.3/bin.3.gbff -s complete --size -cs purple -k -t "Stammerula tephritidis" -te --title_position center -o stam_purple
 ```
 
-
-I have booked Stora Konferensrummet in Ekologihuset for 3 pm on September 3rd.
+## R code to check out
