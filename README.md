@@ -1,6 +1,7 @@
 # population_metagenomics
 Population metagenomics of a symbiont across its ecologically divergent Tephritid fly host ecotypes
 
+![plot1 graph](https://raw.githubusercontent.com/ndreey/population_metagenomics/b3e2d0558e14feb6fdfba23445aa94a704558541/img/fig1_final_hq.svg)
 
 # Required up-stream metagenomic analysis
 This code depends on the outputs from the up-stream metagenomics analysis.
