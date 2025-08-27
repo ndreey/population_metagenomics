@@ -1,0 +1,9 @@
+CHST_P12002_111 10-ALIGNMENT/dupe-marked-bams/CHST_P12002_111.sorted.marked.bam
+CHST_P12002_112 10-ALIGNMENT/dupe-marked-bams/CHST_P12002_112.sorted.marked.bam
+CHST_P12002_113 10-ALIGNMENT/dupe-marked-bams/CHST_P12002_113.sorted.marked.bam
+CHST_P12002_114 10-ALIGNMENT/dupe-marked-bams/CHST_P12002_114.sorted.marked.bam
+CHST_P12002_115 10-ALIGNMENT/dupe-marked-bams/CHST_P12002_115.sorted.marked.bam
+CHST_P12002_116 10-ALIGNMENT/dupe-marked-bams/CHST_P12002_116.sorted.marked.bam
+CHST_P12002_117 10-ALIGNMENT/dupe-marked-bams/CHST_P12002_117.sorted.marked.bam
+CHST_P12002_119 10-ALIGNMENT/dupe-marked-bams/CHST_P12002_119.sorted.marked.bam
+CHST_P12002_121 10-ALIGNMENT/dupe-marked-bams/CHST_P12002_121.sorted.marked.bam

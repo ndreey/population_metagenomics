@@ -1,0 +1,10 @@
+CHES_P12002_144	10-ALIGNMENT/dupe-marked-bams/CHES_P12002_144.sorted.marked.bam
+CHES_P12002_145	10-ALIGNMENT/dupe-marked-bams/CHES_P12002_145.sorted.marked.bam
+CHES_P12002_146	10-ALIGNMENT/dupe-marked-bams/CHES_P12002_146.sorted.marked.bam
+CHES_P12002_147	10-ALIGNMENT/dupe-marked-bams/CHES_P12002_147.sorted.marked.bam
+CHES_P12002_148	10-ALIGNMENT/dupe-marked-bams/CHES_P12002_148.sorted.marked.bam
+CHES_P12002_149	10-ALIGNMENT/dupe-marked-bams/CHES_P12002_149.sorted.marked.bam
+CHES_P12002_150	10-ALIGNMENT/dupe-marked-bams/CHES_P12002_150.sorted.marked.bam
+CHES_P12002_152	10-ALIGNMENT/dupe-marked-bams/CHES_P12002_152.sorted.marked.bam
+CHES_P12002_153	10-ALIGNMENT/dupe-marked-bams/CHES_P12002_153.sorted.marked.bam
+CHES_P14052_107	10-ALIGNMENT/dupe-marked-bams/CHES_P14052_107.sorted.marked.bam

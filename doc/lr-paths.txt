@@ -1,0 +1,3 @@
+02-clean-reads-lr/pt_042_cell1-clean.fq.gz
+02-clean-reads-lr/pt_042_cell2-clean.fq.gz
+02-clean-reads-lr/pt_042_cell3-clean.fq.gz

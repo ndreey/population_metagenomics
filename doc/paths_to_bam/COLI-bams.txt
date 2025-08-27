@@ -1,0 +1,11 @@
+COLI_P12002_164 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_164.sorted.marked.bam
+COLI_P12002_165 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_165.sorted.marked.bam
+COLI_P12002_166 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_166.sorted.marked.bam
+COLI_P12002_167 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_167.sorted.marked.bam
+COLI_P12002_168 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_168.sorted.marked.bam
+COLI_P12002_169 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_169.sorted.marked.bam
+COLI_P12002_170 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_170.sorted.marked.bam
+COLI_P12002_171 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_171.sorted.marked.bam
+COLI_P12002_172 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_172.sorted.marked.bam
+COLI_P12002_173 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_173.sorted.marked.bam
+COLI_P12002_174 10-ALIGNMENT/dupe-marked-bams/COLI_P12002_174.sorted.marked.bam

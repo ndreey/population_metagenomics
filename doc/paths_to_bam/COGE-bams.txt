@@ -1,0 +1,11 @@
+COGE_P12002_133 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_133.sorted.marked.bam
+COGE_P12002_134 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_134.sorted.marked.bam
+COGE_P12002_135 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_135.sorted.marked.bam
+COGE_P12002_136 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_136.sorted.marked.bam
+COGE_P12002_137 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_137.sorted.marked.bam
+COGE_P12002_138 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_138.sorted.marked.bam
+COGE_P12002_139 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_139.sorted.marked.bam
+COGE_P12002_140 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_140.sorted.marked.bam
+COGE_P12002_141 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_141.sorted.marked.bam
+COGE_P12002_142 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_142.sorted.marked.bam
+COGE_P12002_143 10-ALIGNMENT/dupe-marked-bams/COGE_P12002_143.sorted.marked.bam
