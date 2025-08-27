@@ -1,0 +1,12 @@
+CHSK_P12002_101 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_101.sorted.marked.bam
+CHSK_P12002_102 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_102.sorted.marked.bam
+CHSK_P12002_103 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_103.sorted.marked.bam
+CHSK_P12002_104 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_104.sorted.marked.bam
+CHSK_P12002_105 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_105.sorted.marked.bam
+CHSK_P12002_106 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_106.sorted.marked.bam
+CHSK_P12002_107 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_107.sorted.marked.bam
+CHSK_P12002_108 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_108.sorted.marked.bam
+CHSK_P12002_109 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_109.sorted.marked.bam
+CHSK_P12002_110 10-ALIGNMENT/dupe-marked-bams/CHSK_P12002_110.sorted.marked.bam
+CHSK_P14052_101 10-ALIGNMENT/dupe-marked-bams/CHSK_P14052_101.sorted.marked.bam
+CHSK_P14052_102 10-ALIGNMENT/dupe-marked-bams/CHSK_P14052_102.sorted.marked.bam

@@ -1,0 +1,10 @@
+COES_P12002_175	10-ALIGNMENT/dupe-marked-bams/COES_P12002_175.sorted.marked.bam
+COES_P12002_176	10-ALIGNMENT/dupe-marked-bams/COES_P12002_176.sorted.marked.bam
+COES_P12002_177	10-ALIGNMENT/dupe-marked-bams/COES_P12002_177.sorted.marked.bam
+COES_P12002_178	10-ALIGNMENT/dupe-marked-bams/COES_P12002_178.sorted.marked.bam
+COES_P12002_179	10-ALIGNMENT/dupe-marked-bams/COES_P12002_179.sorted.marked.bam
+COES_P12002_180	10-ALIGNMENT/dupe-marked-bams/COES_P12002_180.sorted.marked.bam
+COES_P12002_181	10-ALIGNMENT/dupe-marked-bams/COES_P12002_181.sorted.marked.bam
+COES_P12002_182	10-ALIGNMENT/dupe-marked-bams/COES_P12002_182.sorted.marked.bam
+COES_P12002_183	10-ALIGNMENT/dupe-marked-bams/COES_P12002_183.sorted.marked.bam
+COES_P12002_184	10-ALIGNMENT/dupe-marked-bams/COES_P12002_184.sorted.marked.bam

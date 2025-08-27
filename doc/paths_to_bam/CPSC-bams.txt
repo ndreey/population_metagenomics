@@ -1,0 +1,15 @@
+CPSC_P12002_194 10-ALIGNMENT/dupe-marked-bams/CPSC_P12002_194.sorted.marked.bam
+CPSC_P12002_195 10-ALIGNMENT/dupe-marked-bams/CPSC_P12002_195.sorted.marked.bam
+CPSC_P12002_196 10-ALIGNMENT/dupe-marked-bams/CPSC_P12002_196.sorted.marked.bam
+CPSC_P12002_201 10-ALIGNMENT/dupe-marked-bams/CPSC_P12002_201.sorted.marked.bam
+CPSC_P12002_202 10-ALIGNMENT/dupe-marked-bams/CPSC_P12002_202.sorted.marked.bam
+CPSC_P12002_203 10-ALIGNMENT/dupe-marked-bams/CPSC_P12002_203.sorted.marked.bam
+CPSC_P14052_113 10-ALIGNMENT/dupe-marked-bams/CPSC_P14052_113.sorted.marked.bam
+CPSC_P14052_114 10-ALIGNMENT/dupe-marked-bams/CPSC_P14052_114.sorted.marked.bam
+CPSC_P14052_115 10-ALIGNMENT/dupe-marked-bams/CPSC_P14052_115.sorted.marked.bam
+CPSC_P14052_116 10-ALIGNMENT/dupe-marked-bams/CPSC_P14052_116.sorted.marked.bam
+CPSC_P14052_117 10-ALIGNMENT/dupe-marked-bams/CPSC_P14052_117.sorted.marked.bam
+CPSC_P14052_118 10-ALIGNMENT/dupe-marked-bams/CPSC_P14052_118.sorted.marked.bam
+CPSC_P14052_119 10-ALIGNMENT/dupe-marked-bams/CPSC_P14052_119.sorted.marked.bam
+CPSC_P14052_120 10-ALIGNMENT/dupe-marked-bams/CPSC_P14052_120.sorted.marked.bam
+CPSC_P14052_121 10-ALIGNMENT/dupe-marked-bams/CPSC_P14052_121.sorted.marked.bam

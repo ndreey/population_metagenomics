@@ -1,0 +1,12 @@
+COSK_P12002_154 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_154.sorted.marked.bam
+COSK_P12002_155 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_155.sorted.marked.bam
+COSK_P12002_156 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_156.sorted.marked.bam
+COSK_P12002_157 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_157.sorted.marked.bam
+COSK_P12002_158 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_158.sorted.marked.bam
+COSK_P12002_159 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_159.sorted.marked.bam
+COSK_P12002_160 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_160.sorted.marked.bam
+COSK_P12002_161 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_161.sorted.marked.bam
+COSK_P12002_162 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_162.sorted.marked.bam
+COSK_P12002_163 10-ALIGNMENT/dupe-marked-bams/COSK_P12002_163.sorted.marked.bam
+COSK_P14052_108 10-ALIGNMENT/dupe-marked-bams/COSK_P14052_108.sorted.marked.bam
+COSK_P14052_109 10-ALIGNMENT/dupe-marked-bams/COSK_P14052_109.sorted.marked.bam

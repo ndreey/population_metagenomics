@@ -1,0 +1,9 @@
+CHFI_P12002_122 10-ALIGNMENT/dupe-marked-bams/CHFI_P12002_122.sorted.marked.bam
+CHFI_P12002_123 10-ALIGNMENT/dupe-marked-bams/CHFI_P12002_123.sorted.marked.bam
+CHFI_P12002_125 10-ALIGNMENT/dupe-marked-bams/CHFI_P12002_125.sorted.marked.bam
+CHFI_P12002_126 10-ALIGNMENT/dupe-marked-bams/CHFI_P12002_126.sorted.marked.bam
+CHFI_P12002_128 10-ALIGNMENT/dupe-marked-bams/CHFI_P12002_128.sorted.marked.bam
+CHFI_P12002_129 10-ALIGNMENT/dupe-marked-bams/CHFI_P12002_129.sorted.marked.bam
+CHFI_P12002_130 10-ALIGNMENT/dupe-marked-bams/CHFI_P12002_130.sorted.marked.bam
+CHFI_P12002_131 10-ALIGNMENT/dupe-marked-bams/CHFI_P12002_131.sorted.marked.bam
+CHFI_P12002_132 10-ALIGNMENT/dupe-marked-bams/CHFI_P12002_132.sorted.marked.bam
