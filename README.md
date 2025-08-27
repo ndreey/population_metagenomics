@@ -192,7 +192,7 @@ cat KEGG_UNION/summary.kegg_pathways.bact.union.tsv | grep -v "module_" | wc -l
 I used R and bcftools to parse the vcf file
 
 ## PCA
-PLINK v1.9.0-b.7.7 64-bit (22 Oct 2024)
+```PLINK v1.9.0-b.7.7 64-bit (22 Oct 2024)
 Options in effect:
   --allow-extra-chr
   --double-id
@@ -201,7 +201,7 @@ Options in effect:
   --pca
   --set-missing-var-ids @:#
   --vcf vcfs/stam.filt.bial.snps.passed.no-sc.no-outlier.vcf.gz
-  
+  ```
 ## ADMIXTURE (population structure)
 ```bash
 for K in {1..10}; do admixture --cv -j12 data/stam.passed.no-sc.no-outlier.bed $K > stam.passed.no-sc.no-outlier.log-$K.out ; done
