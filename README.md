@@ -2,27 +2,18 @@
 Population metagenomics of a symbiont across its ecologically divergent Tephritid fly host ecotypes
 
 
-```
-cat thesis_stammerula/16-mettannotator/stammerula/ctg4994/functional_annotation/merged_gff/ctg4994_annotations.gff | grep -o 'kegg=ko:K[0-9]\+' | cut -f 2 -d ":" | wc -l
-1003
+# Required up-stream metagenomic analysis
+This code depends on the outputs from the up-stream metagenomics analysis.
+https://github.com/ndreey/stammerula2025
 
-cat thesis_stammerula/16-mettannotator/stammerula/ctg4994/functional_annotation/merged_gff/ctg4994_annotations.gff | grep -o 'cog=[A-Z]' | wc -l
-1096
+# Down-stream analysis of _Stammerula_
 
-cat thesis_stammerula/07-bin-quality-assessment/CHST-pt_042/bakta/bakta_output/bin.3/bin.3.gff3 | grep -o 'COG:[A-Z]' | wc -l
-174
+## 1. Copy over the files and summarize
+As the stammerula2025 pipeline `sys links` the files to save memory space, we need to copy them over to have a hard copy.
 
-cat thesis_stammerula/15-DRAM/annotations.tsv | cut -f 8 | sort | uniq -c 
-    937 C
-    274 D
-
-```
-
-
-## Copy over results
 `sbatch scripts/resource/copy-nf-stam-results.sh`
 
-## Summarize stats
+We can then summarize the stats!
 
 Number of bins per population
 `bash scripts/resource/collect-raw-bin-stats.sh`
@@ -42,7 +33,7 @@ CHECKM2
 GTDB-Tk
 `bash scripts/stats/gtdbtk-stats.sh`
 
-## Find STAMMERULA
+## 2. Find STAMMERULA
 
 Create BLAST database with all bins and SILVA database
 ```bash
@@ -52,7 +43,7 @@ sbatch scripts/create-blast-db.sh
 sbatch scripts/runBLAST.sh
 ```
 
-## Kraken2
+## 2. Lets build custom Kraken2 Database
 
 ```bash
 sbatch scripts/build-k2-db.sh
@@ -67,7 +58,9 @@ cat 09-KRAKEN2/raw/kraken2_output/*.output | grep "Candidatus Stammerula" | grep
 
 ```
 
-## Prepare metagenome and mag
+## 3. Prepare metagenome and mag
+This will create the required index files for downstream tools.
+
 ```bash
 mkdir -p metagenome mag
 
@@ -78,12 +71,17 @@ sbatch scripts/resource/prep-genome.sh metagenome/CHST-pt_042.contigs.fa
 ```
 
 ## map2meta-gvcf
+This will map to the metagenome and create GVCFs for each sample.
 
 ```bash
 sbatch scripts/map2meta-gvcf.sh
 ```
 
 ## makeGATKvcfs.sh
+1. Combines the GVCFs
+2. Genotypes them to create a final metagenome VCF
+3. Subsets the VCF to only have records for MAG
+
 ```bash
 sbatch scripts/makeGATKvcfs.sh \
 	--gvcf-list doc/gvcfs_paths.list \
@@ -94,6 +92,12 @@ sbatch scripts/makeGATKvcfs.sh \
 ```
 
 ## wrangleVCF
+This will wrangle the MAG vcf file. Meaning it will create:
+- filterd biallelic SNP vcf file
+- filtered biallelic SNP vcf file + invariants
+- All intermediary files
+- Creates summarized stats and validate the vcf files.
+  
 ```bash
 sbatch scripts/wrangleVCF.sh \
 	--vcf 12-GATK-VCFs/stam/vcf-final/stam.mag.raw.vcf.gz \
@@ -104,6 +108,7 @@ sbatch scripts/wrangleVCF.sh \
 
 
 ## MAG COVERAGE
+
 ```bash
 # Convert to BED
 mamba activate bedops
