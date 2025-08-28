@@ -224,12 +224,32 @@ bash plinkPCA.sh
 for K in {1..10}; do admixture --cv -j12 data/stam.passed.no-sc.no-outlier.bed $K > stam.passed.no-sc.no-outlier.log-$K.out ; done
 ```
 
+## Popgen statistics
+
+Genome wide average
+```bash
+piawka --vcf $vcf --tajima --fst --groups $sample_group_tsv > $OUT_FILE
+
+```
+Non-overlapping windows
+```bash
+pixy \
+    --stats pi dxy fst tajima_d \
+    --fst_type hudson \
+    --output_folder $OUT_PATH \
+    --n_cores 4 \
+    --window_size $WIN_SIZE \
+    --populations $POP_file \
+    --vcf $VCF 
+
+```
+
 ## Phylogenetic tree
 
 ```bash
 vcf2phylip.py --input vcfs/stam.filt.bial.snps.passed.no-sc.no-outlier.vcf.gz --output-folder vcf2phylip/ --output-prefix stam.filt.bial.passed.no-sc.no-outlier --fasta --nexus
 
-iqtree2 -s ROARY/core_gene_alignment.aln --mem 5GB --threads 4 --boot 500 -m MFP --prefix stam_roary
+iqtree2 -s $alignment --mem 5GB --threads 4 --boot 500 -m MFP --prefix stam
 ```
 
 ## Plot the genome of the mag.
