@@ -9,6 +9,29 @@ https://github.com/ndreey/stammerula2025
 
 # Down-stream analysis of _Stammerula_
 
+## Required programs
+| Program      | Version         | Use Case |
+|--------------------------|-----------------|----------|
+| BWA-MEM                 | N/A             | Align short reads to the full metagenome. |
+| SAMtools                | N/A             | Sort BAM files. |
+| MarkDuplicates (Picard) | v3.3.0          | Mark PCR duplicates. |
+| GATK                    | v4.5.0.0        | Variant Calling and Filtering|
+| BCFtools                | v1.20           | Subset VCF to contigs, separate sites, filter variants, calculate stats. |
+| VCFtools                | v0.1.16         | Proximity filtering and missingness calculation. |
+| Qualimap multi-bamqc    | v2.3            | Estimate coverage, extract read/coverage stats. |
+| R                       | v4.3.3          | Statistical analyses, plotting, filtering samples. |
+| PLINK                   | v1.90b7.7       | PCA for population structure. |
+| ADMIXTURE               | v1.3.0          | Ancestry estimation with clustering (K). |
+| vcf2phylip              | v2.9            | Convert VCF to FASTA alignment. |
+| IQ-TREE2                | v2.4.0          | Infer maximum likelihood phylogenetic trees. |
+| ape (R package)         | v5.8            | Cophylogeny analysis, tree manipulation. |
+| phytools (R package)    | v2.4            | Comparative phylogenetics and visualization. |
+| pixy                    | v2.0.0.beta2    | Calculate nucleotide diversity, Tajima’s D, FST, and DXY. |
+| piawka                  | v0.8.11         | Calculate whole-genome FST and DXY. |
+| Kraken2                 | v2.1.6          | Taxonomic classification of reads. |
+| KrakenParser            | v0.6.1          | Parse Kraken2 outputs for abundance and classification stats. |
+
+
 ## 1. Copy over the files and summarize
 As the stammerula2025 pipeline `sys links` the files to save memory space, we need to copy them over to have a hard copy.
 
